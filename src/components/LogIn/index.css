@@ -1,0 +1,203 @@
+.Login-bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
+  background-image: linear-gradient(
+    to right,
+    #4169e1,
+    #6495ed,
+    #1e90ff,
+    #00bfff,
+    #87ceeb
+  );
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.note-img-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.note-img-logo {
+  height: 700px;
+  width: 700px;
+}
+
+.login-container {
+  height: 500px;
+  width: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media screen and (max-width: 1300px) {
+  .note-img-logo {
+    height: 500px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .login-container {
+    height: 500px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .login-container {
+    height: 500px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .login-container {
+    height: 450px;
+    width: 350px;
+  }
+  .note-img-logo {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .login-container {
+    height: 400px;
+    width: 300px;
+  }
+  .note-img-logo {
+    height: 350px;
+    width: 350px;
+  }
+  .profile-icon {
+    font-size: 25px;
+    padding-top: 15px;
+    color: #4169e1;
+  }
+  .login-heading {
+    color: #4169e1;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .Login-bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    overflow: auto;
+    background-image: linear-gradient(
+      to right,
+      #4169e1,
+      #6495ed,
+      #1e90ff,
+      #00bfff,
+      #87ceeb
+    );
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .login-container {
+    height: 400px;
+    width: 280px;
+  }
+  .note-img-logo {
+    height: 300px;
+    width: 300px;
+  }
+  .profile-icon {
+    font-size: 25px;
+    padding-top: 15px;
+    color: #4169e1;
+  }
+  .login-heading {
+    color: #4169e1;
+    font-size: 18px;
+  }
+}
+
+.profile-icon {
+  font-size: 50px;
+  padding-top: 25px;
+  color: #4169e1;
+}
+
+.login-heading {
+  color: #4169e1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.logo-profile {
+  align-self: center;
+  padding-left: 8px;
+  font-size: 22px;
+  color: #4169e1;
+}
+.eye-icon {
+  align-self: center;
+  padding-right: 16px;
+  font-size: 22px;
+  color: #4169e1;
+}
+
+.input-field {
+  height: 50px;
+  padding-left: 12px;
+  width: 100%;
+  border: solid 0px;
+  outline: none;
+}
+.password-button {
+  border: none;
+  background-color: transparent;
+}
+.arrow-icon {
+  font-size: 20px;
+  color: #4169e1;
+}
+
+.login-button {
+  width: 80%;
+  height: 50px;
+  margin: 15px;
+  border: solid 0px;
+  color: #ffffff;
+  background-color: #4169e1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 20px;
+}
+
+.sign-up-style {
+  color: #4169e1;
+}
+
+.sign-up {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
