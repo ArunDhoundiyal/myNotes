@@ -30,7 +30,11 @@ class Home extends React.Component {
               Date {date ? <FaArrowDown /> : <FaArrowUp />}
             </button>
           </div>
-          <input placeholder="Search Title..." className="input-search-class" />
+          <input
+            type="search"
+            placeholder="Search Title..."
+            className="input-search-class"
+          />
           <button className="light-dark-mode" onClick={this.onClickMode}>
             {mode ? <IoMdMoon /> : <MdSunny />}
           </button>

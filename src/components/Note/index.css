@@ -1,0 +1,29 @@
+.note-bg-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover;
+  background-color: #ffffff;
+}
+.note-top-navbar {
+  background-color: #4169e1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.logo-icon-note-container {
+  display: flex;
+  flex-direction: row;
+}
+.note-logo-align-center-container {
+  align-self: center;
+}
+.note-icon-logo {
+  height: 50px;
+}
+.myNotes-content {
+  color: #ffffff;
+  font-weight: bold;
+}

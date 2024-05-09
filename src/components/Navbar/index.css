@@ -1,0 +1,107 @@
+.navbar-bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #4169e1;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: auto;
+}
+
+.logo-icon-container {
+  display: flex;
+  margin-left: 12px;
+}
+
+.logo-position {
+  align-self: center;
+}
+.note-logo {
+  height: 50px;
+}
+
+.my-notes-content {
+  color: #ffffff;
+  font-weight: bold;
+}
+.navbar-list-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.hide-list-items {
+  display: none;
+}
+
+.list-style {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .list-style {
+    display: none;
+  }
+  .list-icon-style {
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .list-icon-style:hover {
+    color: yellow;
+  }
+  .icon-title {
+    margin-right: 12px;
+  }
+  .icon-date {
+    margin-right: 12px;
+  }
+  .icon-delete {
+    margin-right: 12px;
+  }
+  .icon-feedback {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .list-icon-style {
+    display: none;
+  }
+}
+
+.title {
+  margin-right: 12px;
+}
+
+.date {
+  margin-right: 12px;
+}
+
+.deleteAll {
+  margin-right: 12px;
+}
+
+.feedback-text {
+  margin-right: 12px;
+}
+
+.list-style:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+@media screen and (max-width: 1038px) {
+  .list-style {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 2px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .my-notes-content {
+    color: #ffffff;
+    font-weight: bold;
+  }
+}

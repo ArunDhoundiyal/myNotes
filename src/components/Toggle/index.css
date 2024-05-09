@@ -1,0 +1,27 @@
+.toggle-icon {
+  color: yellow;
+  font-size: 20px;
+}
+.cancel-button {
+  border: solid 0px;
+  background-color: transparent;
+  margin-right: 12px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.cancel-button:hover {
+  border-bottom: solid 1px yellow;
+  color: yellow;
+}
+
+.toggle-button {
+  border: solid 0px;
+  background-color: transparent;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  border-bottom: solid 1px yellow;
+}
