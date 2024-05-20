@@ -1,27 +1,16 @@
-.toggle-icon {
-  color: yellow;
-  font-size: 20px;
-}
-.cancel-button {
-  border: solid 0px;
-  background-color: transparent;
-  margin-right: 12px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.cancel-button:hover {
-  border-bottom: solid 1px yellow;
-  color: yellow;
-}
-
 .toggle-button {
   border: solid 0px;
   background-color: transparent;
-  margin-right: 12px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 
-.toggle-button:hover {
-  border-bottom: solid 1px yellow;
+.toggle-icon {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .toggle-icon {
+    font-size: 18px;
+  }
 }
