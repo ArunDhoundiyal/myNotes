@@ -26,8 +26,9 @@ class FeedBack extends React.Component {
             <h1 className="feedback-title">Send us your feedback !</h1>
           </div>
           <p className="feedback-description">
-            This feedback option is provided for improvement. Feel free to
-            mention any suggestions or points related to improvement over here.
+            This feedback option is provided for improvement purpose. Feel free
+            to mention any suggestions or points related to improvement over
+            here.
           </p>
         </div>
         <form className="text-area-container">

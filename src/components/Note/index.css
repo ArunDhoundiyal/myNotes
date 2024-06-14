@@ -1,0 +1,55 @@
+.note-bg-container {
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  min-height: 100vh;
+}
+.top-note-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0f70e6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+
+.myNotes-note-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.note-back-icon {
+  color: #ffffff;
+}
+
+.myNotes-note-logo {
+  height: 50px;
+}
+.my-notes-note-text {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.note-icon {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 8px;
+}
+.note-bookmark-icon {
+  color: #ffffff;
+  margin: 8px;
+}
+
+.save-note-icon:hover {
+  content: Save;
+}
+
+.note-list-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

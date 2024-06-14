@@ -1,0 +1,53 @@
+.pop-up-create-container {
+  height: 250px;
+  width: 70px;
+  background-color: #0f70e6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  border-radius: 50px;
+}
+.hide-pop-up-create-container {
+  display: none;
+}
+
+.close-icon {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.close-button {
+  border: solid 0px;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.create-pop-up-button {
+  background-color: transparent;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.create-pop-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+.create-button {
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.create-text {
+  color: #ffffff;
+}

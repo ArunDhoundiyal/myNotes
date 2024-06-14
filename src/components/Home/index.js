@@ -1,12 +1,21 @@
 import Navbar from "../Navbar";
-import SideBar from "../SideBar";
+import CreateButton from "../CreateButton";
+import Note from "../Note";
+import { MdOutlineNoteAlt } from "react-icons/md";
 import "./index.css";
 
 const Home = () => {
   return (
     <div className="Home-bg-container">
       <Navbar />
-      <SideBar />
+      <div className="empty-list-card-container">
+        <div className="empty-list-container">
+          <MdOutlineNoteAlt className="empty-home-logo" />
+          <p className="empty-home-text">Keep your life organized</p>
+        </div>
+      </div>
+
+      <CreateButton />
     </div>
   );
 };

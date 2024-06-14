@@ -1,8 +1,14 @@
+import { useState } from "react";
 import Toggle from "../Toggle";
 import { MdDeleteSweep } from "react-icons/md";
+import { RiBarChartHorizontalLine } from "react-icons/ri";
+import SideBar from "../SideBar";
+import { RxCross1 } from "react-icons/rx";
 import "./index.css";
 
 const Navbar = () => {
+  const [toggleSideBar, setToggleSideBar] = useState(false);
+
   return (
     <div className="navbar-bg-container">
       <div className="search-container">
@@ -12,15 +18,18 @@ const Navbar = () => {
           type="search"
         />
       </div>
+
       <div className="navbar-container">
-        <div className="my-notes-logo-container">
-          <img
-            src="https://res.cloudinary.com/da52fiag8/image/upload/v1714148431/ynkdcmb72eeqss8am1dp.png"
-            alt="my-notes"
-            className="myNotes-logo"
-          />
-          <span className="myNotes-title">my-Notes</span>
-        </div>
+        <button
+          className="side-bar-toggle-button"
+          onClick={() => setToggleSideBar(!toggleSideBar)}
+        >
+          {toggleSideBar ? (
+            <RxCross1 className="toggle-bar" />
+          ) : (
+            <RiBarChartHorizontalLine className="toggle-bar" />
+          )}
+        </button>
         <div className="selector-container">
           <select className="selector">
             <option className="option">Title Nor</option>
@@ -39,6 +48,7 @@ const Navbar = () => {
         </div>
         <Toggle />
       </div>
+      <SideBar toggleSideBar={toggleSideBar} />
     </div>
   );
 };

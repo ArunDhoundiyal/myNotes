@@ -4,3 +4,23 @@
   min-height: 100vh;
   background-size: cover;
 }
+.empty-list-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.empty-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-home-logo {
+  font-size: 75px;
+  color: #0f70e6;
+}
+.empty-home-text {
+  font-weight: bold;
+}

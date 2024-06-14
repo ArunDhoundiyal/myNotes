@@ -7,26 +7,28 @@
   border-right: solid 1px #d3d3d3;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: #f6f6f6;
+  justify-content: space-between;
+  background-color: #ffffff;
   overflow: auto;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
+/* background-color: #0f70e6; */
 
-.email-sidebar-container {
+.hide-sidebar-bg-container {
+  background-size: cover;
+  position: fixed;
+  top: 101px;
+  width: 250px;
+  min-height: 100vh;
+  border-right: solid 1px #d3d3d3;
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
-  font-weight: bold;
-  color: #4169e1;
-}
-.BiLogoGmail {
-  padding-right: 8px;
-  color: #ff4500;
-  font-size: 25px;
-}
-
-.email-id {
-  font-size: 12px;
+  justify-content: space-between;
+  background-color: #ffffff;
+  overflow: auto;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
 }
 
 .sidebar-logo-container {
@@ -34,10 +36,11 @@
   align-items: center;
   margin: 10px;
   cursor: pointer;
+  color: black;
 }
 .sidebar-logo-container:hover {
-  background-color: #4169e1;
-  color: #ffffff;
+  color: white;
+  background-color: #0f70e6;
 }
 
 .sidebar-logo {
@@ -54,8 +57,10 @@
 .myNotes-sidebar-logo-container {
   display: flex;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 150px;
   margin-left: 18px;
+  background-color: #ffffff;
+  width: 210px;
 }
 
 .myNotes {
@@ -64,7 +69,7 @@
 
 .my-notes-sidebar {
   font-weight: bold;
-  color: #4169e1;
+  color: #0f70e6;
 }
 .my-notes-sidebar-paragraph {
   font-size: 11px;

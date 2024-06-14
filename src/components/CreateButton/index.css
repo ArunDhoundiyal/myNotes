@@ -1,0 +1,22 @@
+.create-container {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+.create-note-button {
+  background-color: transparent;
+  border: solid 0px;
+  cursor: pointer;
+}
+.transform-create-note-button {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease-in-out;
+  background-color: transparent;
+  border: solid 0px;
+  cursor: pointer;
+}
+
+.create-note-img {
+  height: 75px;
+  cursor: pointer;
+}
