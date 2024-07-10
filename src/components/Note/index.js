@@ -15,6 +15,7 @@ import { FaListUl } from "react-icons/fa";
 import { FaArrowRotateLeft } from "react-icons/fa6";
 import { FaArrowRotateRight } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa6";
+import { GrGallery } from "react-icons/gr";
 import { FaAlignLeft } from "react-icons/fa";
 import { FaAlignRight } from "react-icons/fa";
 import { FaAlignCenter } from "react-icons/fa6";
@@ -22,42 +23,50 @@ import { FaAlignJustify } from "react-icons/fa6";
 import { FaIndent } from "react-icons/fa";
 import { FaOutdent } from "react-icons/fa";
 import { MdOutlineEmojiEmotions } from "react-icons/md";
+import { FaRegFilePdf } from "react-icons/fa6";
+import { AiFillAudio } from "react-icons/ai";
+import { AiOutlineFontColors } from "react-icons/ai";
+import { MdOutlineFormatColorFill } from "react-icons/md";
 const Note = () => {
   return (
     <div className="note-bg-container">
       <div className="note-header-container">
-        <div className="myNotes-logo-Note-header-container">
-          <FaLongArrowAltLeft />
-          <img
-            src="https://res.cloudinary.com/da52fiag8/image/upload/v1714148431/ynkdcmb72eeqss8am1dp.png"
-            className="myNotes-note-header-logo"
-            alt="myNoes-logo"
-          />
-          <span className="myNotes-txt">my-Notes</span>
+        <div className="note-header-first-container">
+          <FaBold />
+          <FaItalic />
+          <ImUnderline />
+          <FaStrikethrough />
+          <AiOutlineFontColors />
+          <MdOutlineFormatColorFill />
+          <MdOutlineEmojiEmotions />
+          <FaSuperscript />
+          <FaSubscript />
+          <FaListOl />
+          <FaListUl />
+          <FaArrowRotateLeft />
+          <FaArrowRotateRight />
+          <FaLink />
+          <GrGallery />
+          <FaRegFilePdf />
+          <AiFillAudio />
+          <FaAlignLeft />
+          <FaAlignRight />
+          <FaAlignCenter />
+          <FaAlignJustify />
+          <FaIndent />
+          <FaOutdent />
+          <div className="">
+            <MdDeleteOutline className="note-logo-icon" />
+            <FaRegBookmark className="note-logo-icon" />
+            <FiShare2 className="note-logo-icon" />
+            <Toggle />
+          </div>
         </div>
-        <FaBold />
-        <FaItalic />
-        <ImUnderline />
-        <FaStrikethrough />
-        <MdOutlineEmojiEmotions />
-        <FaSuperscript />
-        <FaSubscript />
-        <FaListOl />
-        <FaListUl />
-        <FaArrowRotateLeft />
-        <FaArrowRotateRight />
-        <FaLink />
-        <FaAlignLeft />
-        <FaAlignRight />
-        <FaAlignCenter />
-        <FaAlignJustify />
-        <FaIndent />
-        <FaOutdent />
-        <div>
-          <MdDeleteOutline className="note-logo-icon" />
-          <FaRegBookmark className="note-logo-icon" />
-          <FiShare2 className="note-logo-icon" />
-          <Toggle />
+
+        <div className="note-header-second-container">
+          <select>
+            <option>Self-serif</option>
+          </select>
         </div>
       </div>
     </div>
