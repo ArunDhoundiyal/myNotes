@@ -1,6 +1,6 @@
 import "./index.css";
+import { useState } from "react";
 import Toggle from "../Toggle";
-import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FiShare2 } from "react-icons/fi";
 import { FaRegBookmark } from "react-icons/fa";
 import { MdDeleteOutline } from "react-icons/md";
@@ -27,7 +27,20 @@ import { FaRegFilePdf } from "react-icons/fa6";
 import { AiFillAudio } from "react-icons/ai";
 import { AiOutlineFontColors } from "react-icons/ai";
 import { MdOutlineFormatColorFill } from "react-icons/md";
+import { LuPlus } from "react-icons/lu";
+import { LuMinus } from "react-icons/lu";
 const Note = () => {
+  const [fontSize, setFontSize] = useState(8);
+  const onClickIncreaseSize = () => {
+    if (fontSize < 72) {
+      setFontSize((preState) => preState + 1);
+    }
+  };
+  const onClickDecreaseSize = () => {
+    if (fontSize > 8) {
+      setFontSize((preState) => preState - 1);
+    }
+  };
   return (
     <div className="note-bg-container">
       <div className="note-header-container">
@@ -65,8 +78,43 @@ const Note = () => {
 
         <div className="note-header-second-container">
           <select>
-            <option>Self-serif</option>
+            <option>H1</option>
+            <option>H2</option>
+            <option>H3</option>
+            <option>H4</option>
+            <option>H5</option>
+            <option>H6</option>
           </select>
+          <select className="select-letter-case">
+            <option>UPPER CASE</option>
+            <option>lower case</option>
+            <option>snake_case</option>
+            <option>camelCase</option>
+            <option>PascalCase</option>
+            <option>kebab-case</option>
+            <option> Title Case</option>
+            <option>Sentence case</option>
+          </select>
+
+          <select className="select-font-family">
+            <option>Serif</option>
+            <option>Sans-serif</option>
+            <option>Monospace</option>
+            <option>Cursive</option>
+            <option>Brush Script MT, Std, cursive</option>
+            <option>Fantasy</option>
+            <option> Algerian</option>
+          </select>
+          <div className="font-size-container">
+            <button className="increase-size" onClick={onClickDecreaseSize}>
+              <LuMinus />
+            </button>
+            {fontSize}
+            <button className="decrease-size" onClick={onClickIncreaseSize}>
+              <LuPlus />
+            </button>
+          </div>
+          <button className="ocr-button">OCR</button>
         </div>
       </div>
     </div>
